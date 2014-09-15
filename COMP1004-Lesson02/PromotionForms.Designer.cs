@@ -126,6 +126,7 @@
             this.personalTrainingRadioButton.TabStop = true;
             this.personalTrainingRadioButton.Text = "Personal &Training";
             this.personalTrainingRadioButton.UseVisualStyleBackColor = true;
+            this.personalTrainingRadioButton.CheckedChanged += new System.EventHandler(this.personalTrainingRadioButton_CheckedChanged);
             // 
             // membershipRadioButton
             // 
@@ -137,6 +138,7 @@
             this.membershipRadioButton.TabStop = true;
             this.membershipRadioButton.Text = "&Membership";
             this.membershipRadioButton.UseVisualStyleBackColor = true;
+            this.membershipRadioButton.CheckedChanged += new System.EventHandler(this.membershipRadioButton_CheckedChanged);
             // 
             // juiceBarRadioButton
             // 
@@ -148,6 +150,7 @@
             this.juiceBarRadioButton.TabStop = true;
             this.juiceBarRadioButton.Text = "&Juice Bar";
             this.juiceBarRadioButton.UseVisualStyleBackColor = true;
+            this.juiceBarRadioButton.CheckedChanged += new System.EventHandler(this.juiceBarRadioButton_CheckedChanged);
             // 
             // equipmentRadioButton
             // 
@@ -159,6 +162,7 @@
             this.equipmentRadioButton.TabStop = true;
             this.equipmentRadioButton.Text = "&Equipment/Accesories";
             this.equipmentRadioButton.UseVisualStyleBackColor = true;
+            this.equipmentRadioButton.CheckedChanged += new System.EventHandler(this.equipmentRadioButton_CheckedChanged);
             // 
             // clothingRadioButton
             // 
@@ -170,6 +174,7 @@
             this.clothingRadioButton.TabStop = true;
             this.clothingRadioButton.Text = "&Clothing";
             this.clothingRadioButton.UseVisualStyleBackColor = true;
+            this.clothingRadioButton.CheckedChanged += new System.EventHandler(this.clothingRadioButton_CheckedChanged);
             // 
             // nameLabel
             // 
@@ -208,6 +213,7 @@
             this.welcomeRichTextBox.Size = new System.Drawing.Size(312, 82);
             this.welcomeRichTextBox.TabIndex = 2;
             this.welcomeRichTextBox.Text = "";
+            this.welcomeRichTextBox.Visible = false;
             // 
             // promotionTextBox
             // 
@@ -215,6 +221,7 @@
             this.promotionTextBox.Name = "promotionTextBox";
             this.promotionTextBox.Size = new System.Drawing.Size(312, 20);
             this.promotionTextBox.TabIndex = 3;
+            this.promotionTextBox.Visible = false;
             // 
             // signInButton
             // 
@@ -224,6 +231,7 @@
             this.signInButton.TabIndex = 5;
             this.signInButton.Text = "&Sign In";
             this.signInButton.UseVisualStyleBackColor = true;
+            this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
             // 
             // exitButton
             // 
@@ -261,8 +269,10 @@
             this.departmentPictureBox.Location = new System.Drawing.Point(13, 211);
             this.departmentPictureBox.Name = "departmentPictureBox";
             this.departmentPictureBox.Size = new System.Drawing.Size(183, 109);
+            this.departmentPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.departmentPictureBox.TabIndex = 13;
             this.departmentPictureBox.TabStop = false;
+            this.departmentPictureBox.Visible = false;
             // 
             // imageVisibleTextBox
             // 
@@ -274,6 +284,8 @@
             this.imageVisibleTextBox.TabIndex = 4;
             this.imageVisibleTextBox.Text = "Image Visible";
             this.imageVisibleTextBox.UseVisualStyleBackColor = true;
+            this.imageVisibleTextBox.Visible = false;
+            this.imageVisibleTextBox.CheckedChanged += new System.EventHandler(this.imageVisibleTextBox_CheckedChanged);
             // 
             // printForm1
             // 
@@ -291,6 +303,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Clea&r";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // PromotionForms
             // 

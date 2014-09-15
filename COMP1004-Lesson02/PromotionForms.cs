@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace COMP1004_Lesson02
 {
-    public partial class Form1 : Form
+    public partial class PromotionForms : Form
     {
-        public Form1()
+        public PromotionForms()
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void titleLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

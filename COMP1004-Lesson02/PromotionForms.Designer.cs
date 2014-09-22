@@ -53,6 +53,7 @@
             this.imageVisibleTextBox = new System.Windows.Forms.CheckBox();
             this.printForm1 = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
             this.button1 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.departmentGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.departmentPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -203,6 +204,7 @@
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(213, 20);
             this.nameTextBox.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.nameTextBox, "Enter the name of the User");
             this.nameTextBox.WordWrap = false;
             // 
             // welcomeRichTextBox
@@ -262,6 +264,7 @@
             this.memberIdMaskedTextBox.Size = new System.Drawing.Size(39, 20);
             this.memberIdMaskedTextBox.TabIndex = 1;
             this.memberIdMaskedTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.memberIdMaskedTextBox, "Enter Member ID");
             this.memberIdMaskedTextBox.ValidatingType = typeof(int);
             // 
             // departmentPictureBox
@@ -364,6 +367,7 @@
         private System.Windows.Forms.CheckBox imageVisibleTextBox;
         private Microsoft.VisualBasic.PowerPacks.Printing.PrintForm printForm1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
